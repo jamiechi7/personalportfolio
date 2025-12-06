@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project summary for Cafe Jamie, a personal portfolio site that blends academic projects, travel diaries, and fine art works with a cozy cafe-inspired design.">
+  <title>Cafe Jamie | Final Project Summary</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .back-menu {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2d2d2d;
+      text-decoration: none;
+    }
+
+    .back-menu:hover,
+    .back-menu:focus {
+      opacity: 0.7;
+    }
+
+    .header-line {
+      width: 320px;
+      margin: 12px 0 30px;
+      border: none;
+      border-top: 2px solid rgba(0,0,0,0.2);
+    }
+
+    .page-header {
+      padding: 0 0 20px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .page-header-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.7rem;
+      color: rgba(0,0,0,0.6);
+    }
+
+    .page-header h1 {
+      margin: 8px 0 10px;
+      font-size: 2rem;
+    }
+
+    .page-header p {
+      margin: 0;
+      max-width: 42rem;
+      font-size: 0.95rem;
+      color: rgba(0,0,0,0.85);
+    }
+
+    .summary-section {
+      padding: 18px 0;
+      max-width: 48rem;
+    }
+
+    .summary-section h2 {
+      font-size: 1.2rem;
+      margin: 0 0 8px;
+    }
+
+    .summary-section p {
+      margin: 0 0 8px;
+      font-size: 0.95rem;
+      color: rgba(0,0,0,0.9);
+    }
+
+    .summary-section ul {
+      margin: 6px 0 0 1.2rem;
+      font-size: 0.95rem;
+      color: rgba(0,0,0,0.9);
+    }
+
+    .summary-section li {
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 768px) {
+      .page-header h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a id="top"></a>
+  <div class="page-wrap">
+    <main>
+      <a href="homepage.html" class="back-menu">← BACK TO MENU</a>
+      <hr class="header-line">
+
+      <header class="page-header">
+        <p class="page-header-eyebrow">final project</p>
+        <h1>Cafe Jamie – Project Summary</h1>
+        <p>
+          Cafe Jamie is a creative spinoff of a personal portfolio site that represents and combines my personal and professional passions for business, analytics,
+          travel, and art into a cozy, cafe-inspired digital space. This is my Project Summary that explains the topic,
+          purpose, and key features I implemented for my TAC 104 final project.
+        </p>
+      </header>
+
+      <section class="summary-section">
+        <h2>Topic &amp; Purpose of the Site</h2>
+        <p>
+          The topic of my site is a personal portfolio framed as a digital, interactive cafe, “Cafe Jamie.”
+          Instead of a traditional portfolio layout, each section of my background and personal experiences is treated like a menu item or
+          dedicated section of the cafe:
+        </p>
+        <ul>
+          <li><strong>Academic Projects</strong> – case studies, decks, and class/club projects.</li>
+          <li><strong>Travel Diaries</strong> – photo-driven stories from trips in Asia and the U.S.</li>
+          <li><strong>Fine Art Works</strong> – a small gallery of illustrations and paintings.</li>
+          <li><strong>Contact / CV</strong> – ways to get in touch and a link to my resume.</li>
+        </ul>
+        <p>
+          The purpose of the site is to showcase my work in a way that feels personal and cohesive,
+          while practicing modern, responsive web design techniques from this course. The cafe theme is my attempt to
+          tie together my academic and professional experience with my personal hobbies in one branded experience.
+        </p>
+      </section>
+
+      <section class="summary-section">
+        <h2>Features Implemented</h2>
+        <p>
+          Across the homepage and four main subpages—Academic Projects, Travel Diaries, Fine Art Works, and Contact / CV—I implemented the following features:
+        </p>
+        <ul>
+          <li>
+            <strong>Multi-page layout:</strong> separate HTML pages for the homepage, Academic
+            Projects, Travel Diaries, Fine Art Works, Contact / CV, plus individual photo gallery
+            pages for different travel locations.
+          </li>
+          <li>
+            <strong>Consistent cafe-inspired design:</strong> shared color palette, typography, and
+            top navigation bar to visually connect all pages and ensure a seamless user experience.
+          </li>
+          <li>
+            <strong>Responsive design:</strong> use of flexible grids and media queries so card
+            layouts/tabs (projects, travel spots, and art pieces) adjust from multicolumn on desktops to single
+            column on smaller screens.
+          </li>
+          <li>
+            <strong>Interactive cards with hover effects:</strong> project, travel spot, and art piece cards
+            integrate subtle hover animations (lift and shadow) to increase the UI's interactivity.
+          </li>
+          <li>
+            <strong>Image galleries for travel entries:</strong> each major location in the Travel
+            Diaries page links to its own gallery page that displays a set of photos in a grid format.
+          </li>
+          <li>
+            <strong>HTML structure:</strong> used variation of headings, sections, lists, and alt text
+            to keep content readable and accessible for users.
+          </li>
+          <li>
+            <strong>Meta descriptions and meaningful page titles:</strong> each page includes a
+            descriptive &lt;title&gt; and &lt;meta name="description"&gt; to explain its purpose.
+          </li>
+          <li>
+            <strong>Consistent footer “refill” messaging:</strong> playful footer text (e.g., “Feeling like a
+            refill?”) that reinforces the cafe theme and guides users back to the homepage.
+          </li>
+        </ul>
+      </section>
+
+      <section class="summary-section">
+        <h2>Plugins / External Libraries</h2>
+        <p>
+          This project does not rely on any external plugins or JavaScript libraries. All layout,
+          styling, and interactivity are implemented using HTML and CSS only, plus my shared
+          <code>styles.css</code> file for consistent styling across pages.
+        </p>
+      </section>
+
+      <section class="summary-section">
+        <h2>Reflection</h2>
+        <p>
+          Building Cafe Jamie helped me practice planning a multi-page site, developing a consistent
+          visual interface, and thinking/brainstorming how content and navigation work together and are vital to ensure a cohesive user experience.
+          The final result culminates in my personal portfolio where I aim to create a personal, creative brand in the form of an inviting cafe menu instead of a
+          traditional resume site, and it can be expanded with more projects, trips, and artwork in the future as I continue building, working, and exploring.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year">2025</span> Final Project Summary brewed at Cafe Jamie.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </div>
+</body>
+</html>

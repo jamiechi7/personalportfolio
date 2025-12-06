@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the Los Angeles photo gallery from my Travel Diaries at Cafe Jamie. This collection features snapshots from favorite spots across LA, including bookstores, scenic lookouts, cafes, and everyday moments that capture my memories and the city's creativity and rich culture.">
+  <title>LA — Travel Diary Gallery</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .gallery-header {
+      padding: 32px 0 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .gallery-grid {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 10px;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    .back-menu {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2d2d2d;
+      text-decoration: none;
+    }
+
+    .back-menu:hover,
+    .back-menu:focus {
+      opacity: 0.7;
+    }
+
+    .header-line {
+      width: 320px;
+      margin: 12px 0 30px;
+      border: none;
+      border-top: 2px solid rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 900px) {
+      .gallery-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 600px) {
+      .gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+  <div class="header-left">
+    <a href="homepage.html" class="site-name">JAMIE CHIANG</a>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="academicprojects.html">Academic Projects</a></li>
+      <li><a href="traveldiaries.html">Travel Diaries</a></li>
+      <li><a href="fineartwork.html">Fine Art Works</a></li>
+      <li><a href="contact.html">Contact / CV</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="header-divider">
+  <div class="page-wrap">
+
+    <main>
+      <a href="traveldiaries.html" class="back-menu">← BACK TO TRAVEL DIARIES</a>
+      <hr class="header-line">
+
+      <header class="gallery-header">
+        <h1>Los Angeles Photo Gallery</h1>
+        <p>A collection of photos from my time so far in Los Angeles.</p>
+      </header>
+
+      <div class="gallery-grid">
+        <img src="img/thelastbookstore.jpg" alt="The Last Bookstore">
+        <img src="img/griffith.jpg" alt="Griffith Observatory">
+        <img src="img/damomatcha.jpg" alt="Damo Matcha">
+      </div>
+
+      <p style="margin-top:24px;">
+        <a href="traveldiaries.html">← Back to Travel Diaries</a>
+      </p>
+    </main>
+  </div>
+</body>
+</html>
