@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fine art works from Cafe Jamie: a small collection of paintings, drawings, and mixed-media pieces inspired by travel, everyday rituals, and soft color palettes. Browse a curated grid of four favorite pieces, each with a short story behind it.">
+  <title>Cafe Jamie | Fine Art Works</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .back-menu {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2d2d2d;
+      text-decoration: none;
+    }
+
+    .back-menu:hover,
+    .back-menu:focus {
+      opacity: 0.7;
+    }
+
+    .header-line {
+      width: 320px;
+      margin: 12px 0 30px;
+      border: none;
+      border-top: 2px solid rgba(0,0,0,0.2);
+    }
+
+    .page-header {
+      padding: 32px 0 20px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .page-header-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.7rem;
+      color: rgba(0,0,0,0.6);
+    }
+
+    .page-header h1 {
+      margin: 8px 0 10px;
+      font-size: 2rem;          
+    }
+
+    .page-header p {
+      margin: 0;
+      max-width: 40rem;
+      font-size: 1.5rem;        
+      color: rgba(0,0,0,0.8);
+    }
+
+    .art-intro {
+      padding: 18px 0 10px;
+    }
+
+    .art-intro p {
+      margin: 0;
+      font-size: 1.2rem;
+      color: rgba(0,0,0,0.8);
+    }
+
+    .art-gallery {
+      padding-top: 8px;
+    }
+
+    .art-gallery h2 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      text-align: center
+    }
+
+    .art-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .art-card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      padding: 14px 14px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .art-card {
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .art-card:hover,
+    .art-card:focus-within {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);  
+    }
+
+    .art-card img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      aspect-ratio: 1 / 1;
+    }
+
+    .art-card h3 {
+      margin: 6px 0 2px;
+      font-size: 1rem;
+    }
+
+    .art-meta {
+      font-size: 0.85rem;
+      color: rgba(0,0,0,0.65);
+      margin: 0;
+    }
+
+    .art-caption {
+      margin: 4px 0 0;
+      font-size: 1.0rem;
+      color: rgba(0,0,0,0.85);
+    }
+
+    @media (max-width: 760px) {
+      .art-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-left">
+    <a href="homepage.html" class="site-name">JAMIE CHIANG</a>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="academicprojects.html">Academic Projects</a></li>
+      <li><a href="traveldiaries.html">Travel Diaries</a></li>
+      <li><a href="fineartwork.html">Fine Art Works</a></li>
+      <li><a href="contact.html">Contact / CV</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="header-divider">
+  <a id="top"></a>
+  <div class="page-wrap">
+    <main>
+      <a href="homepage.html" class="back-menu">← BACK TO MENU</a>
+      <hr class="header-line">
+
+      <header class="page-header">
+        <p class="page-header-eyebrow">fine art works</p>
+        <h1>Sketches and paintings from the cafe.</h1>
+        <p>
+          This page gathers a few of my favorite fine art pieces — paintings, drawings,
+          and mixed-media experiments that live in sketchbooks or on my walls. Each
+          piece has a story behind it …
+        </p>
+      </header>
+
+      <section class="section art-intro">
+        <h2 class="visually-hidden">Art Introduction</h2>
+        <p>
+          Think of this as the gallery wall inside Cafe Jamie filled with pieces I've created; stroll and browse along!
+        </p>
+      </section>
+
+      <section class="section art-gallery">
+        <h2>Featured pieces</h2>
+
+        <div class="art-grid">
+          <article class="art-card">
+            <img src="img/dental.jpg" alt="Daydreams at Work">
+            <h3>Daydreams at Work</h3>
+            <p class="art-meta">Colored Pencil on Paper · 11&quot; × 14&quot;</p>
+            <p class="art-caption">
+            Working as a clinical assistant at an orthodontist’s office, I have witnessed firsthand the powerful impact one’s outward appearance can have on self-esteem. As patients undergo phases of teeth alignment, I observe not only the transformation of their teeth but the way that they carry themselves; from fearing the thought of showing their teeth to growing towards a full grin.
+            Healthy teeth and a renewed sense of confidence form a combined synergy emanating from the patients, inspiring me to look out for and boost the emotional health of those around me in my own endeavors.
+            </p>
+          </article>
+
+          <article class="art-card">
+            <img src="img/covid.jpg" alt="Model Minority">
+            <h3>Model Minority</h3>
+            <p class="art-meta">Acrylic on canvas · 11&quot; × 14&quot;</p>
+            <p class="art-caption">
+              The model minority myth–placing an ethnic group into a stereotypical mold of high achievement and assimilation—has served as the scapegoat for educational as well as socioeconomic debates within American society and government. 
+              The wedge created between various racial groups has contributed to not only the uneven distribution of social, health, and financial resources, but emotional and social well beings. In order to truly progress as a society, we must dismantle the toxic homogenous narratives assigned to racial and religious groups and recognize the multifaceted stories that make up America’s diversity.
+            </p>
+          </article>
+
+          <article class="art-card">
+            <img src="img/tpe.jpg" alt="Summer Trip">
+            <h3>Summer Trip</h3>
+            <p class="art-meta">Acrylic on canvas · 16&quot; × 20&quot;</p>
+            <p class="art-caption">
+              A cultural melting pot, night markets frequently feature street food vendors originating from a variety of East Asian cuisines. An embodiment of cultural and ethnic diversity, they are representative of the greater idea of crossing borders of race, language, and age in a communal setting.
+              Standing at the towering lighted doorway of the Raohe Street Night Market with my sister—a treasured place of retreat near my grandparent’s Taipei apartment—I await to explore the intersection of my own American and Taiwanese backgrounds.
+            </p>
+          </article>
+
+          <article class="art-card">
+            <img src="img/bird.png" alt="Her Own World">
+            <h3>Her Own World</h3>
+            <p class="art-meta">Acrylic on canvas · 16&quot; × 20&quot;</p>
+            <p class="art-caption">
+              Her heart was pounding, sweat beaded on her forehead, and she felt
+              deathly sick; others were watching again. She felt like she was shut
+              inside a cage, the others unable to hear her over the background of
+              chirping birds. What were others thinking? Judging?
+            </p>
+            <p class="art-caption">
+              It was then she realized that it was not the noise of feathered
+              creatures, but her own fear in her ears and social anxiety trapping her
+              in. Why had she lived solely for the gaze of others? Now she knew: it was time to let go and escape; she did not want to be
+              a songbird to be admired anymore.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <div class="back-home" style="margin-top: 28px; font-size: 0.9rem;">
+        <p>Want to explore more? <a href="traveldiaries.html">Visit travel diaries</a> or <a href="academicprojects.html">see academic projects</a>.</p>
+      </div>
+    </main>
+    
+    <div class="refill-footer" style="margin-top: 40px; font-size: 1.1rem; text-align: left;">
+      <p>
+        Feeling like a refill? ☕
+        <a href="homepage.html" style="text-decoration: underline; color: inherit;">
+          Head back to the cafe homepage.
+        </a>
+      </p>
+    </div>
+
+    <footer>
+      <p>© <span id="year">2025</span> Painted with 🩷 at Cafe Jamie.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </div>
+</body>
+</html>

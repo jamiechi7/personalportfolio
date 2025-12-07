@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact and CV page for Cafe Jamie. Reach out for collaborations, internships, and creative projects, or download my resume to see experience across business, data, and design.">
+  <title>Cafe Jamie | Contact & CV</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .back-menu {
+      display: inline-block;
+      margin-top: 20px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: #2d2d2d;
+      text-decoration: none;
+    }
+
+    .back-menu:hover,
+    .back-menu:focus {
+      opacity: 0.7;
+    }
+
+    .header-line {
+      width: 320px;
+      margin: 12px 0 30px;
+      border: none;
+      border-top: 2px solid rgba(0,0,0,0.2);
+    }
+
+    .page-header {
+      padding: 0 0 20px;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .page-header-eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 0.75rem; /* MATCHING OTHER PAGES */
+      color: rgba(0,0,0,0.6);
+    }
+
+    .page-header h1 {
+      margin: 12px 0 14px;
+      font-size: 2.35rem; /* MATCHING OTHER PAGES */
+      font-weight: 700;
+    }
+
+    .page-header p {
+      margin: 0;
+      max-width: 42rem;
+      font-size: 1.15rem; /* MATCHING OTHER PAGES */
+      line-height: 1.55;
+      color: rgba(0,0,0,0.8);
+    }
+    
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.3fr);
+      gap: 24px;
+      padding-top: 20px;
+    }
+
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    .contact-list li {
+      margin-bottom: 10px;
+    }
+
+    .tag {
+      display: inline-block;
+      min-width: 64px;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(0,0,0,0.6);
+      margin-right: 6px;
+    }
+
+    .resume-panel {
+      padding: 14px 16px;
+      border-radius: 12px;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      font-size: 0.9rem;
+    }
+
+    .resume-panel h2 {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+    }
+
+    .resume-panel p {
+      margin: 0 0 10px;
+    }
+
+    .resume-link {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(0,0,0,0.2);
+      text-decoration: none;
+      font-size: 0.9rem;
+      color: #2d2d2d;
+    }
+
+    .resume-link:hover,
+    .resume-link:focus {
+      border-color: rgba(0,0,0,0.4);
+    }
+
+    @media (max-width: 768px) {
+      .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+  <div class="header-left">
+    <a href="homepage.html" class="site-name">JAMIE CHIANG</a>
+  </div>
+
+  <nav class="main-nav">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="academicprojects.html">Academic Projects</a></li>
+      <li><a href="traveldiaries.html">Travel Diaries</a></li>
+      <li><a href="fineartwork.html">Fine Art Works</a></li>
+      <li><a href="contact.html">Contact / CV</a></li>
+    </ul>
+  </nav>
+</header>
+<hr class="header-divider">
+  <a id="top"></a>
+  <div class="page-wrap">
+    <main>
+      <a href="homepage.html" class="back-menu">← BACK TO MENU</a>
+      <hr class="header-line"> 
+
+      <header class="page-header">
+        <p class="page-header-eyebrow">contact &amp; cv</p>
+        <h1>Let’s chat over matcha.</h1>
+        <p>
+          Whether you’d like to talk about opportunities, brainstorm ideas, projects, design, or just swap cafe
+          recommendations, I’d love to connect. Here’s the easiest way to reach me and a link
+          to my resume if you’d like to peruse more of what I’ve worked on.
+        </p>
+      </header>
+
+      <section class="section">
+        <div class="contact-layout">
+          <div>
+            <ul class="contact-list">
+              <li>
+                <span class="tag">Email</span>
+                <a href="mailto:jamiechi@usc.edu">jamiechi@usc.edu</a>
+              </li>
+              <li>
+                <span class="tag">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/jamiechiang7/" target="_blank" rel="noopener">
+                  linkedin.com/in/jamiechiang7
+                </a>
+              </li>
+              <li>
+                <span class="tag">Location</span>
+                Los Angeles &amp; New Jersey
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-panel">
+            <h2>Resume</h2>
+            <p>
+              My resume covers academic projects, professional experience, and leadership roles across USC, student organizations, and internships where I’ve
+              combined business, data, and design — from organizing hackathons to working with
+              startups and student-led clients.
+            </p>
+            <a class="resume-link" href="pdf/Resume.pdf" target="_blank" rel="noopener">
+              Open resume (PDF)
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <div class="back-home" style="margin-top: 28px; font-size: 0.9rem;">
+        <p>Or, if you’d like to browse more first, visit the <a href="academicprojects.html">academic projects</a> or <a href="traveldiaries.html">travel diaries</a> pages.</p>
+      </div>
+    </main>
+
+    <div class="refill-footer" style="margin-top: 40px; font-size: 1.1rem; text-align: left;">
+      <p>
+        Feeling like a refill? ☕
+        <a href="homepage.html" style="text-decoration: underline; color: inherit;">
+          Head back to the cafe homepage.
+        </a>
+      </p>
+    </div>
+
+    <footer>
+      <p>© <span id="year">2025</span> Connected with 🩷 at Cafe Jamie.</p>
+      <p><a href="#top">Back to top</a></p>
+    </footer>
+  </div>
+</body>
+</html>
